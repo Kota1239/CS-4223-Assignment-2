@@ -8,9 +8,14 @@ public class Scenes : MonoBehaviour
         SceneManager.LoadScene("Game");
     }
 
-    public void StopPlay()
+    public void WinGame()
     {
-        SceneManager.LoadScene("Exit");
+        SceneManager.LoadScene("GameWin");
+    }
+
+    public void LooseGame()
+    {
+        SceneManager.LoadScene("GameLoose");
     }
 
     public void GoToPreferences()
